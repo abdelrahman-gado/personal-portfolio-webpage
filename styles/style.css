@@ -4,17 +4,24 @@
     box-sizing: border-box;
 }
 
+:root {
+    --new-white: #f0f0f0;
+    --new-red: #be3144;
+    --new-blue: #45567d;
+    --new-gray: #303841;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 17.28px;
     font-weight: 400;
     line-height: 24.192px;
-    color: #f0f0f0;
+    color: var(--new-white);
 }
 
 
 #navbar {
-    background-color: #be3144;
+    background-color: var(--new-red);
     width: 100%;
     position: fixed;
     display: flex;
@@ -38,10 +45,34 @@ body {
     text-decoration: none;
     font-size: 21.12px;
     padding: 19.2px;
-    color: #f0f0f0;
+    color: var(--new-white);
 }
 
 #navbar ul li a:hover {
-    background-color: #45567d;
+    background-color: var(--new-blue);
 }
 
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 45px;
+}
+
+#welcome-section h1 {
+    font-size: 57.6px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#welcome-section p {
+    font-size: 28.8px;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--new-red);
+}
