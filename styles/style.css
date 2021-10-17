@@ -95,6 +95,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--new-white)
 }
 
 #project .grid .project-tile a {
@@ -162,4 +163,54 @@ a {
 
 #projects .show-all:hover {
     background-color: var(--new-red);
+}
+
+#contact{
+    background-color: var(--new-gray);
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h2{
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 32px;
+    line-height: 50px;
+}
+
+#contact p {
+    font-style: italic;
+    flex-shrink: 0;
+}
+
+#contact .contact-flex {
+    display: flex;
+    margin-top: 32px;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 100%;
+    justify-content: center;
+}
+
+#contact .contact-flex .contact-item {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    transition: transform 0.3s ease-out;
+}
+
+#contact .contact-item p {
+    font-size: 24px;
+}
+
+#contact .contact-flex .contact-item:hover {
+    transform: translateY(8px);
 }
