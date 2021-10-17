@@ -91,6 +91,7 @@ body {
     font-size: 38.97px;
     font-weight: 600;
     padding-bottom: 16px;
+    line-height: 35px;
 }
 
 a {
@@ -105,7 +106,7 @@ a {
 
 #projects .grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 32px;
     width: 80%;
     margin: 0 auto;
@@ -229,5 +230,5 @@ footer {
 }
 
 footer p {
-    margin: 16px;
+    margin: 8px;
 }
