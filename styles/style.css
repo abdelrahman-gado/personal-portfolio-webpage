@@ -222,7 +222,7 @@ a {
 
 footer {
     background-color: var(--new-gray);
-    height: 15vh;
+    height: 20vh;
     width: 100%;
     border-top: 4px solid var(--new-red);
     display: flex;
@@ -235,4 +235,16 @@ footer {
 
 footer p {
     margin: 8px;
+}
+
+
+@media (max-width: 460px) {
+    #navbar {
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
 }
